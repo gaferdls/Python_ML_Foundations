@@ -3,13 +3,13 @@
 #Define a simple class:
 class Car:
     #The __init__ method is called when a new Car object is created\
-    def __init__(self, make, model, year, color, mileage,wheel_drive):
+    def __init__(self, make, model, year, color, mileage,train_type):
             self.make = make
             self.model = model
             self.year = year
             self.color = color
             self.mileage = mileage
-            self.wheel_drive = wheel_drive
+            self.train_type = train_type
 
     def start_engine(self):
         return "Vroom! Engine started"
@@ -25,7 +25,7 @@ class Car:
         return "Honk! Honk!"
 
     def get_info(self):
-        return f"{self.make} {self.model} {self.year} ({self.color}), Mileage :  {self.mileage}, {self.wheel_drive}wd"
+        return f"{self.make} {self.model} {self.year} ({self.color}), Mileage :  {self.mileage}, {self.train_type}wd"
 
 #Create Car objects, providing initial values for the attributes
 my_car = Car("Toyota", "Camry", 2022, "Silver", 25000.0,2)
